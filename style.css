@@ -3978,7 +3978,7 @@ a {
     gap: 18px;
     padding-left: 0;
   }
-  /* Responsive: newsletter + social hidden on mobile */
+  /* Responsive: hide newsletter + social row on small screens (layout stays logo + links only) */
   .footerNewsletter {
     display: none;
   }

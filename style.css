@@ -3978,15 +3978,9 @@ a {
     gap: 18px;
     padding-left: 0;
   }
+  /* Responsive: newsletter + social hidden on mobile */
   .footerNewsletter {
-    border-left: 0;
-    padding-left: 0;
-  }
-  .footerNewsletterTitle {
-    font-size: 34px;
-  }
-  .footerNewsletterForm {
-    width: 100%;
+    display: none;
   }
   .footerBottomInner {
     flex-direction: column;
@@ -3997,12 +3991,6 @@ a {
 @media (max-width: 520px) {
   .footerLinks {
     grid-template-columns: 1fr;
-  }
-  .footerNewsletterTitle {
-    font-size: 30px;
-  }
-  .footerSocialRow {
-    margin-top: 18px;
   }
   .footerPayments {
     justify-content: flex-start;
@@ -4026,16 +4014,6 @@ a {
   .footerLink {
     font-size: 15px;
     margin-bottom: 8px;
-  }
-  .footerNewsletterForm {
-    width: 100%;
-    height: 56px;
-    border-radius: 18px;
-    padding: 12px 14px;
-  }
-  .footerNewsletterBtn {
-    width: 42px;
-    height: 42px;
   }
   .footerBottom {
     padding: 34px 0 16px;

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, fonts, global styles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuji Films | Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,400;1,500&family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <div class="navbarContainer">
+        <a class="navbarLogo" href="#" aria-label="Fuji Films Home">
+          <img src="assets/images/fuji-logo.png" alt="Fuji GFX Logo" />
+        </a>
+
+        <button
+          class="navbarHamburger"
+          type="button"
+          aria-label="Toggle menu"
+          aria-controls="primaryNav"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navbarMenu" id="primaryNav">
+          <a href="#" class="navbarLink">Home</a>
+          <a href="#" class="navbarLink">Products</a>
+          <a href="#" class="navbarLink">GFX for Professionals</a>
+          <a href="#" class="navbarLink">X Space</a>
+          <a href="#" class="navbarLink">X Academy</a>
+          <a href="#" class="navbarLink">Support</a>
+        </nav>
+
+        <div class="navbarIcons">
+          <a href="#" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="#" aria-label="Profile">
+            <i class="fa-regular fa-user"></i>
+          </a>
+          <a href="#" aria-label="Shopping Bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="heroSection" aria-label="Fuji hero slideshow">
+        <div class="heroSlider" id="heroSlider">
+          <div class="heroSlide isActive">
+            <img src="assets/images/image1.png" alt="Fuji camera showcase" />
+            <div class="heroOverlay"></div>
+            <div class="heroContent">
+              <h1>UNIQUELY CRAFTED<br />CAMERAS ONLY<br />FOR THE BEST</h1>
+            </div>
+          </div>
+
+          <div class="heroSlide">
+            <img src="assets/images/image2.png" alt="Photographer with Fuji camera" />
+            <div class="heroOverlay"></div>
+            <div class="heroContent">
+              <h1>UNIQUELY CRAFTED<br />CAMERAS ONLY<br />FOR THE BEST</h1>
+            </div>
+          </div>
+
+          <div class="heroSlide">
+            <img src="assets/images/imag3.png" alt="Fuji camera lifestyle shot" />
+            <div class="heroOverlay"></div>
+            <div class="heroContent">
+              <h1>UNIQUELY CRAFTED<br />CAMERAS ONLY<br />FOR THE BEST</h1>
+            </div>
+          </div>
+
+          <div class="heroBottomLine" aria-hidden="true"></div>
+
+          <button class="heroNavBtn heroPrevBtn" type="button" aria-label="Previous slide">
+            &#8592;
+          </button>
+          <button class="heroNavBtn heroNextBtn" type="button" aria-label="Next slide">
+            &#8594;
+          </button>
+
+          <div class="heroDots" aria-label="Hero slide pagination">
+            <button class="heroDot isActive" type="button" aria-label="Go to slide 1"></button>
+            <button class="heroDot" type="button" aria-label="Go to slide 2"></button>
+            <button class="heroDot" type="button" aria-label="Go to slide 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision -->
+      <section class="visionSection" aria-label="Fuji vision section">
+        <div class="visionContainer">
+          <div class="visionLeft">
+            <h2 class="visionTitle">
+              We believe in vision
+              <br />
+              through every
+              <span class="visionShotWrap">
+                shot
+                <img src="assets/images/vector01.png" alt="" aria-hidden="true" />
+              </span>
+            </h2>
+
+            <button class="visionBtn" type="button">
+              Our Story
+              <img class="btnArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+            </button>
+          </div>
+
+          <div class="visionRight">
+            <p>
+              Backed by the legendary color science, Fujifilm X Series and GFX cameras deliver
+              the truest, most vibrant colors straight out of the camera. From our iconic Film
+              Simulations to revolutionary sensors, experience the heritage of superior color in
+              every digital frame you capture.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- New launches -->
+      <section class="launchSection" aria-label="New launches section">
+        <div class="launchSticky">
+          <div class="launchContainer">
+            <div class="launchBaseLayer">
+              <button class="launchBadge" type="button">NEW LAUNCHES</button>
+              <img class="launchWordmarkImg" src="assets/images/Xhalf.png" alt="Xhalf" />
+            </div>
+
+            <div class="launchOverlayLayer">
+              <div class="launchCameraWrap" id="launchCameraWrap">
+                <img class="launchCameraImg" src="assets/images/camera.png" alt="Fujifilm Xhalf camera" />
+              </div>
+
+              <div class="launchCtaWrap">
+                <div class="launchCtaGlow" aria-hidden="true"></div>
+                <button class="launchCtaBtn" type="button">
+                  Check This Out
+                  <img class="btnArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products + build -->
+      <section class="productsSection" aria-label="Product categories and build section">
+        <div class="productsContainer">
+          <article class="productCard">
+            <img src="assets/images/products/camera.jpg" alt="Camera products" />
+            <div class="productCardFooter">
+              <div>
+                <h3>Camera</h3>
+                <p>Check out all our products</p>
+              </div>
+              <img class="productArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+            </div>
+          </article>
+
+          <article class="productCard">
+            <img src="assets/images/products/lens.jpg" alt="Lens products" />
+            <div class="productCardFooter">
+              <div>
+                <h3>Lenses</h3>
+                <p>Check out all our products</p>
+              </div>
+              <img class="productArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+            </div>
+          </article>
+
+          <article class="productCard">
+            <img src="assets/images/products/access.jpg" alt="Accessories products" />
+            <div class="productCardFooter">
+              <div>
+                <h3>Accessories</h3>
+                <p>Check out all our products</p>
+              </div>
+              <img class="productArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+            </div>
+          </article>
+
+          <article class="productCard">
+            <img src="assets/images/products/bino.jpg" alt="Binocular products" />
+            <div class="productCardFooter">
+              <div>
+                <h3>Binoculars</h3>
+                <p>Check out all our products</p>
+              </div>
+              <img class="productArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+            </div>
+          </article>
+        </div>
+
+        <div class="buildSection">
+          <div class="buildBanner">
+            <img src="assets/images/products/build.gif" alt="Build your persona showcase" />
+            <div class="buildOverlay"></div>
+            <div class="buildContent">
+              <h2>Build Your Persona</h2>
+              <p>Discover Products Made for You</p>
+              <button class="buildBtn" type="button">
+                Start Your Journey
+                <img class="btnArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best sellers -->
+      <section class="bestSection" aria-label="Best sellers section">
+        <div class="bestContainer">
+          <div class="bestHeader">
+            <h2>Best Sellers</h2>
+          </div>
+
+          <div class="bestToolbar">
+            <div class="bestFilters" role="tablist" aria-label="Product categories">
+              <button class="isActive" type="button" role="tab" aria-selected="true">Camera</button>
+              <button type="button" role="tab" aria-selected="false">Lenses</button>
+              <button type="button" role="tab" aria-selected="false">Binoculars</button>
+              <button type="button" role="tab" aria-selected="false">Accessories</button>
+            </div>
+            <div class="bestNavBtns">
+              <button type="button" class="bestNavPrev" aria-label="Previous best sellers">&#8249;</button>
+              <button type="button" class="bestNavNext" aria-label="Next best sellers">&#8250;</button>
+            </div>
+          </div>
+
+          <div class="bestCardsRow">
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X-S20</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X-S20</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X-S20</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X-S20</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X-T5</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X-H2</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>GFX 50S II</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+
+            <article class="bestCard">
+              <button type="button" class="bestRatingBtn" aria-label="Rating 5.0 out of 5">
+                <img src="assets/images/products/star.png" alt="" aria-hidden="true" />
+                <span>5.0</span>
+              </button>
+              <img class="bestMainImg" src="assets/images/products/camera01.png" alt="Fuji camera" />
+              <div class="bestMeta">CAMERA</div>
+              <h3>X100VI</h3>
+              <div class="bestSaveTag">(Save &#8377;38,999)</div>
+              <div class="bestPriceRow">
+                <strong>&#8377;511,000</strong>
+                <p class="bestOldPrice">
+                  <img src="assets/images/products/line.png" alt="" aria-hidden="true" />
+                </p>
+              </div>
+              <div class="bestColorBlock">
+                <div class="bestPickRow">
+                  <div class="bestColorRow">Color: <strong class="bestColorBlack">Black</strong></div>
+                  <span class="bestCompareLabel">COMPARE</span>
+                </div>
+                <div class="bestPickRow">
+                  <div class="bestThumbRowThumbs">
+                    <img src="assets/images/products/smallCamera01.jpg" alt="Camera thumb 1" />
+                    <img src="assets/images/products/smallCamera02.jpg" alt="Camera thumb 2" />
+                  </div>
+                  <button class="bestAddBtn" type="button">&#43; Add</button>
+                </div>
+              </div>
+              <button class="bestCardBtn" type="button">Check This Out</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Film simulation -->
+      <section class="filmSimSection" aria-label="Film simulation">
+        <div class="filmSimContainer">
+          <h2 class="filmSimTitle">
+            Film
+            <span class="filmSimWordWrap">
+              Simulation
+              <img class="filmSimLineImg" src="assets/images/line01.png" alt="" aria-hidden="true" />
+            </span>
+          </h2>
+          <p class="filmSimDesc">
+            The 20 Film Simulation modes offered by FUJIFILM X-M5, including REALA ACE mode, harness 90 years of
+            Fujifilm color science.
+          </p>
+        </div>
+      </section>
+
+      <!-- Film simulation showcase -->
+      <section class="filmSimShowcase" aria-label="Film simulation examples">
+        <div class="filmSimShowcaseInner">
+          <div class="filmSimShowcaseDial">
+            <img src="assets/images/dial.png" alt="Camera mode dial" />
+          </div>
+          <div class="filmSimShowcaseRect" aria-hidden="true">
+            <img src="assets/images/Rectangle.png" alt="" />
+          </div>
+          <div class="filmSimShowcaseMiddle">
+            <img src="assets/images/middle.png" alt="ACROS film simulation" />
+          </div>
+          <div class="filmSimShowcasePhoto">
+            <img src="assets/images/rightSide.jpg" alt="Sample photo with film simulation" />
+          </div>
+        </div>
+      </section>
+
+      <!-- X Academy -->
+      <section class="xAcademySection" aria-label="X Academy">
+        <div class="xAcademyInner">
+          <img class="xAcademyLogo" src="assets/images/xAcademy.png" alt="X Academy logo" />
+          <p class="xAcademyTagline">
+            United by passion for the perfect shot, Fujifilm X Academy brings together creators of all levels
+            to learn, share, and grow.
+          </p>
+          <button class="buildBtn xAcademyBtn" type="button">
+            Start Your Journey
+            <img class="btnArrowIcon" src="assets/images/arrow02.png" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Shop the Feed -->
+      <section class="shopFeedSection" aria-label="Shop the Feed">
+        <div class="shopFeedInner">
+          <div class="shopFeedHeader">
+            <div class="shopFeedHeaderLeft">
+              <h2 class="shopFeedTitle">
+                Shop the
+                <span class="shopFeedWordWrap">
+                  Feed
+                  <img class="shopFeedLineImg" src="assets/images/shop/line.png" alt="" aria-hidden="true" />
+                </span>
+              </h2>
+              <p class="shopFeedDesc">
+                Follow Fujifilm moments on Instagram and find the perfect camera for your journey.
+              </p>
+            </div>
+
+            <div class="shopFeedHeaderRight" aria-label="Instagram account">
+              <div class="shopFeedAvatar" aria-hidden="true">
+                <img class="shopFeedAvatarImg" src="assets/images/fuji-logo.png" alt="Fuji logo" />
+              </div>
+              <span class="shopFeedHandle">@fujifilmxindia</span>
+            </div>
+          </div>
+
+          <div class="shopFeedGrid" role="list" aria-label="Instagram posts">
+            <article class="shopFeedCard" role="listitem">
+              <img class="shopFeedCardImg" src="assets/images/shop/image01.jpg" alt="Instagram post 1" />
+              <img class="shopFeedCardIg" src="assets/images/shop/instagram.png" alt="" aria-hidden="true" />
+            </article>
+            <article class="shopFeedCard" role="listitem">
+              <img class="shopFeedCardImg" src="assets/images/shop/image02.jpg" alt="Instagram post 2" />
+              <img class="shopFeedCardIg" src="assets/images/shop/instagram.png" alt="" aria-hidden="true" />
+            </article>
+            <article class="shopFeedCard" role="listitem">
+              <img class="shopFeedCardImg" src="assets/images/shop/image03.jpg" alt="Instagram post 3" />
+              <img class="shopFeedCardIg" src="assets/images/shop/instagram.png" alt="" aria-hidden="true" />
+            </article>
+            <article class="shopFeedCard" role="listitem">
+              <img class="shopFeedCardImg" src="assets/images/shop/image04.jpg" alt="Instagram post 4" />
+              <img class="shopFeedCardIg" src="assets/images/shop/instagram.png" alt="" aria-hidden="true" />
+            </article>
+            <article class="shopFeedCard" role="listitem">
+              <img class="shopFeedCardImg" src="assets/images/shop/image05.jpg" alt="Instagram post 5" />
+              <img class="shopFeedCardIg" src="assets/images/shop/instagram.png" alt="" aria-hidden="true" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonialsSection" aria-label="What experts are saying">
+        <div class="testimonialsInner">
+          <h2 class="testimonialsTitle">WHAT XPERTS ARE SAYING</h2>
+
+          <div class="testimonialsViewport testimonialsViewportTop" aria-hidden="true">
+            <div class="testimonialsRow testimonialsRowTop" aria-label="Top testimonials">
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever
+                it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever
+                it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever
+                it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+            </div>
+          </div>
+
+          <div class="testimonialsViewport testimonialsViewportBottom" aria-hidden="true">
+            <div class="testimonialsRow testimonialsRowBottom" aria-label="Bottom testimonials">
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever
+                it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever
+                it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+
+            <article class="testimonialCard">
+              <div class="testimonialTop">
+                <img class="testimonialAvatar" src="assets/images/person.jpg" alt="Person" />
+                <div class="testimonialMeta">
+                  <div class="testimonialName">David Lewis</div>
+                  <div class="testimonialSource">The Interior Journal</div>
+                  <div class="testimonialStars" aria-hidden="true">
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                    <img src="assets/images/star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <p class="testimonialText">
+                Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever
+                it. Farther be chapter at visited married in it pressed. By distrusts procuring be oh
+                frankness existence believing instantly if. Doubtful on an juvenile as of servants insisted.
+              </p>
+            </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest stories -->
+      <section class="latestStoriesSection latestStoriesV2" aria-label="Latest Stories">
+        <div class="latestStoriesV2__inner">
+          <div class="latestStoriesV2__header">
+            <h2 class="latestStoriesV2__title">Latest Stories</h2>
+            <button class="latestStoriesV2__viewAll" type="button">
+              <img class="latestStoriesV2__viewAllIcon" src="assets/images/viewAll.png" alt="" />
+              View all
+            </button>
+          </div>
+
+          <div class="latestStoriesV2__layout">
+            <article class="latestStoriesV2__mainCard" aria-label="Wildlife photography story">
+              <img class="latestStoriesV2__mainImg" src="assets/images/tiger.jpg" alt="Wildlife photography" />
+
+              <div class="latestStoriesV2__mainOverlay">
+                <div class="latestStoriesV2__mainBadge">Camera</div>
+
+                <div class="latestStoriesV2__mainMeta">
+                  <img class="latestStoriesV2__metaIcon" src="assets/images/calendar.png" alt="" />
+                  <span>Oct 09, 2023</span>
+                  <span class="latestStoriesV2__metaDot" aria-hidden="true">|</span>
+                  <img class="latestStoriesV2__metaIcon" src="assets/images/comment.svg" alt="" />
+                  <span>0 comments</span>
+                </div>
+
+                <h3 class="latestStoriesV2__mainTitle">Wildlife Photography</h3>
+                <p class="latestStoriesV2__mainText">
+                  The realm of camera has witnessed incredible advancements over the past decade. As we venture
+                  further into this era of technological marvels, the way we experience and interact with sound
+                  continues to evolve.
+                </p>
+
+                <a class="latestStoriesV2__readMore" href="#" aria-label="Read more about Wildlife Photography">
+                  Read more
+                </a>
+              </div>
+            </article>
+
+            <div class="latestStoriesV2__side">
+              <article class="latestStoriesV2__sideCard" aria-label="Inside In-Far Excellence story">
+                <img class="latestStoriesV2__sideImg" src="assets/images/girl.jpg" alt="Inside In-Far Excellence" />
+                <div class="latestStoriesV2__sideBody">
+                  <div class="latestStoriesV2__sideMeta">
+                    <img class="latestStoriesV2__sideMetaIcon" src="assets/images/calendar.png" alt="" />
+                    <span>Oct 09, 2023</span>
+                    <span class="latestStoriesV2__metaDot" aria-hidden="true">|</span>
+                    <img class="latestStoriesV2__sideMetaIcon" src="assets/images/comment.svg" alt="" />
+                    <span>0 comments</span>
+                  </div>
+
+                  <h3 class="latestStoriesV2__sideTitle">Inside In-Far Excellence</h3>
+                  <p class="latestStoriesV2__sideText">
+                    In the camera tech world, there's always room for innovation. But, there are few moments when a
+                    product not only meets expectations but also redefines them.
+                  </p>
+
+                  <a class="latestStoriesV2__sideReadMore" href="#" aria-label="Read more">
+                    Read more
+                  </a>
+                </div>
+              </article>
+
+              <article class="latestStoriesV2__sideCard latestStoriesV2__sideCard--divider" aria-label="The International Sound Artistry Conference Recap story">
+                <img class="latestStoriesV2__sideImg" src="assets/images/man.jpg" alt="The International Sound Artistry Conference Recap" />
+                <div class="latestStoriesV2__sideBody">
+                  <div class="latestStoriesV2__sideMeta">
+                    <img class="latestStoriesV2__sideMetaIcon" src="assets/images/calendar.png" alt="" />
+                    <span>Oct 09, 2023</span>
+                    <span class="latestStoriesV2__metaDot" aria-hidden="true">|</span>
+                    <img class="latestStoriesV2__sideMetaIcon" src="assets/images/comment.svg" alt="" />
+                    <span>0 comments</span>
+                  </div>
+
+                  <h3 class="latestStoriesV2__sideTitle">The International Sound Artistry Conference Recap</h3>
+                  <p class="latestStoriesV2__sideText">
+                    This year's Fujifilm was nothing short of sensational. As enthusiasts and professionals from
+                    around the globe congregated, the air buzzed with anticipation and excitement.
+                  </p>
+
+                  <a class="latestStoriesV2__sideReadMore" href="#" aria-label="Read more">
+                    Read more
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support strip -->
+      <section class="supportStripSection" aria-label="Customer support highlights">
+        <div class="supportStripInner">
+          <article class="supportStripItem">
+            <div class="supportStripHead">
+              <img
+                class="supportStripIcon"
+                src="assets/images/customerService.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="supportStripTitle">Customer service</h3>
+            </div>
+            <p class="supportStripSub">Focused on You, Just Like Your Lens</p>
+          </article>
+
+          <article class="supportStripItem">
+            <div class="supportStripHead">
+              <img
+                class="supportStripIcon"
+                src="assets/images/freeShipping.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="supportStripTitle">Fast Free Shipping</h3>
+            </div>
+            <p class="supportStripSub">Get free shipping on orders of $150 or more</p>
+          </article>
+
+          <article class="supportStripItem">
+            <div class="supportStripHead">
+              <img class="supportStripIcon" src="assets/images/friend.png" alt="" aria-hidden="true" />
+              <h3 class="supportStripTitle">Refer a friend</h3>
+            </div>
+            <p class="supportStripSub">Refer a friend and get 15% off each other.</p>
+          </article>
+
+          <article class="supportStripItem">
+            <div class="supportStripHead">
+              <img class="supportStripIcon" src="assets/images/payment.png" alt="" aria-hidden="true" />
+              <h3 class="supportStripTitle">Secure payment</h3>
+            </div>
+            <p class="supportStripSub">Your payment information is processed securely</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footerSection" aria-label="Footer">
+        <div class="footerTop">
+          <div class="footerTopInner">
+            <div class="footerBrand">
+              <img class="footerLogo" src="assets/images/footer/fuji.png" alt="FUJIFILM X | GFX" />
+            </div>
+
+            <div class="footerLinks">
+              <div class="footerLinkCol">
+                <h4 class="footerLinkTitle">Collections</h4>
+                <a class="footerLink" href="#">Cameras</a>
+                <a class="footerLink" href="#">Lenses</a>
+                <a class="footerLink" href="#">Binoculars</a>
+                <a class="footerLink" href="#">Accessories</a>
+              </div>
+
+              <div class="footerLinkCol">
+                <h4 class="footerLinkTitle">Information</h4>
+                <a class="footerLink" href="#">Our Story</a>
+                <a class="footerLink" href="#">Our Journal</a>
+                <a class="footerLink" href="#">FAQs</a>
+                <a class="footerLink" href="#">Contact Us</a>
+              </div>
+
+              <div class="footerLinkCol">
+                <h4 class="footerLinkTitle">Information</h4>
+                <a class="footerLink" href="#">Login/Create Account</a>
+                <a class="footerLink" href="#">Registered Products</a>
+                <a class="footerLink" href="#">Orders &amp; Returns</a>
+                <a class="footerLink" href="#">My Information</a>
+              </div>
+            </div>
+
+            <div class="footerNewsletter">
+              <h3 class="footerNewsletterTitle">
+                Stay in the loop with our<br />
+                weekly newsletter
+              </h3>
+
+              <div class="footerNewsletterForm" role="form" aria-label="Weekly newsletter signup">
+                <input class="footerNewsletterInput" type="email" placeholder="Enter your email" aria-label="Enter your email" />
+                <button class="footerNewsletterBtn" type="button" aria-label="Submit email">
+                  →
+                </button>
+              </div>
+
+              <div class="footerSocialRow" aria-label="Social media">
+                <a href="#" aria-label="Facebook" class="footerSocialLink">
+                  <img src="assets/images/footer/facebook.png" alt="" aria-hidden="true" />
+                </a>
+                <a href="#" aria-label="X" class="footerSocialLink">
+                  <img src="assets/images/footer/x.png" alt="" aria-hidden="true" />
+                </a>
+                <a href="#" aria-label="Instagram" class="footerSocialLink">
+                  <img src="assets/images/footer/insta.png" alt="" aria-hidden="true" />
+                </a>
+                <a href="#" aria-label="YouTube" class="footerSocialLink">
+                  <img src="assets/images/footer/youtube.png" alt="" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerBottom">
+          <div class="footerBottomInner">
+            <div class="footerCorp"><span aria-hidden="true">©</span> FUJIFILM Corporation.</div>
+
+            <div class="footerPayments" aria-label="Payment options">
+              <img src="assets/images/footer/visa.png" alt="" aria-hidden="true" />
+              <img src="assets/images/footer/master.png" alt="" aria-hidden="true" />
+              <img src="assets/images/footer/american.png" alt="" aria-hidden="true" />
+              <img src="assets/images/footer/paypal.png" alt="" aria-hidden="true" />
+              <img src="assets/images/footer/un.png" alt="" aria-hidden="true" />
+              <img src="assets/images/footer/discover.png" alt="" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

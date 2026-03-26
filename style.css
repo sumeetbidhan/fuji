@@ -1998,19 +1998,23 @@ a {
 
 .filmSimShowcaseMiddle {
   flex: 0 0 auto;
-  margin-right: var(--gapLg); /* larger/combined gap before the photo */
+  /* Reduce empty gap before the photo so the picture starts earlier */
+  margin-right: var(--gapSm);
 }
 
 .filmSimShowcasePhoto {
   flex: 1 1 auto;
   min-width: 0;
   display: flex;
+  /* Stick image to the right edge of the remaining space */
   justify-content: flex-end;
 }
 
 .filmSimShowcasePhoto img {
   display: block;
-  width: min(100%, clamp(520px, 38vw, 760px));
+  /* Let the image use the available width; cap to avoid oversizing */
+  width: 100%;
+  max-width: 900px;
   height: auto;
   object-fit: cover;
 }
@@ -2104,7 +2108,8 @@ a {
   }
 
   .filmSimShowcasePhoto img {
-    width: min(100%, clamp(440px, 42vw, 680px));
+    width: 100%;
+    max-width: 680px;
   }
 
   .bestCard {
@@ -2189,9 +2194,10 @@ a {
     font-size: 15px;
   }
 
+  /* Inner padding removed on small screens — .filmSimSection already has horizontal padding */
   .filmSimShowcaseInner {
     flex-direction: column;
-    padding: 0 16px;
+    padding: 0;
     gap: 20px;
     align-items: center;
   }
